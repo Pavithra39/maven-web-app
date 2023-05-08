@@ -15,7 +15,7 @@ node{
        	sh "mvn sonar:sonar"    	
     }
         
-    stage('upload war to nexus'){
+    stage('upload war to nexus repositary'){
 	steps{
 		nexusArtifactUploader artifacts: [	
 			[
